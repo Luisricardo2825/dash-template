@@ -1,7 +1,7 @@
 import { RouteObject, LoaderFunction, ActionFunction } from "react-router-dom";
 
 type Route = Omit<RouteObject, "Element"> & {
-  Element?: () => React.ReactNode;
+  Element?: (props: PageProps) => React.ReactNode;
 };
 
 window.__routes = [];
@@ -13,7 +13,7 @@ type Action = {
 };
 
 type Page = {
-  default: React.ComponentType<unknown>;
+  default: React.ComponentType<PageProps>;
   ErrorBoundary?: React.ComponentType<unknown>;
 } & Loader &
   Action;
@@ -49,7 +49,7 @@ export default async function getRoutes() {
 
     routes.push({
       path: definitivePath,
-      Element: Component as unknown as () => React.ReactNode,
+      Element: Component as unknown as (props: PageProps) => React.ReactNode,
       loader: loader || Loader,
       action: action || Action,
       ErrorBoundary: ErrorBoundary,

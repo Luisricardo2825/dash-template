@@ -7,16 +7,31 @@ import {
   useActionData,
 } from "react-router-dom";
 
-export default function Home() {
+export default function Home(props: PageProps) {
   const data = useLoaderData();
   const location = useLocation();
   const actionData = useActionData();
+
+  // Exemplo de uso executeQuery
+  const consulta = async () => {
+    const resultado = await props?.executeQuery<{ CODUSU: number }[]>(
+      "Select STP_GET_CODUSULOGADO() as CODUSU from DUAL",
+      []
+    );
+
+    if (resultado.length > 0) {
+      console.log(resultado[0].CODUSU);
+    } else {
+      console.log("Sem resultados");
+    }
+  };
   return (
     <div>
       {location.pathname}
       <br />
       {JSON.stringify(data)}
       {JSON.stringify(actionData)}
+      <button onClick={consulta}>Consultar usuario logado</button>
       {window.__routes.map((path) => (
         <div key={path}>
           <Link to={path}>{path}</Link>

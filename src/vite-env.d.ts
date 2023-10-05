@@ -1,6 +1,18 @@
 /// <reference types="vite/client" />
 
 declare const __IP_SERVER__: string | undefined;
+
+interface PageProps {
+  /** executeQuery melhorado, sendo executado de forma assincrona e retornando uma Promisse */
+  executeQuery: <T>(query: string, arr: queryParams) => Promise<T>;
+  openApp?: (resourceID: string, params?: object) => void;
+  openLevel?: (nivel: string, params?: object) => void;
+  refreshDetails?: (componentID: string, params?: object) => void;
+  openPage?: (page: string, params?: object) => void;
+  /** Parametros recebidos pela janela de parametros sankhya */
+  Params?: NonNullable<{ [x: string]: unknown }>;
+}
+
 declare interface Window {
   __routes: string[];
   /** Execute query padrão, fornecido pela janela de dashboards do sankhya */
