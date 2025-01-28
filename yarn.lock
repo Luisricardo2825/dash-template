@@ -1227,32 +1227,32 @@ vite@^4.4.5:
   optionalDependencies:
     fsevents "~2.3.2"
 
-web-dash-builder-darwin-x64@0.0.34:
-  version "0.0.34"
-  resolved "https://registry.yarnpkg.com/web-dash-builder-darwin-x64/-/web-dash-builder-darwin-x64-0.0.34.tgz#06e57e410d4f2ceb320d754db192d0ceb3131b40"
-  integrity sha512-O8RjfkMGGAj+bE7mchMH1HCVCFZ/3zhF9plgAr9q8myHJA6SrBpTi4LXZLgs4+yJ14rMhFAtOJiWpkc86DMasw==
+web-dash-builder-darwin-x64@0.0.35:
+  version "0.0.35"
+  resolved "https://registry.yarnpkg.com/web-dash-builder-darwin-x64/-/web-dash-builder-darwin-x64-0.0.35.tgz#e43eb4a94952d1e4e1d06a3c77cf2835340de9e0"
+  integrity sha512-1SBuSAzQCPgSO82OFFxy53r8fS4GoY6L9xwPWrn9ZbvPutYm63uzuvlbUr4NHnVdp4gFwWA7DeZaDND73xVKGA==
 
-web-dash-builder-linux-x64-gnu@0.0.34:
-  version "0.0.34"
-  resolved "https://registry.yarnpkg.com/web-dash-builder-linux-x64-gnu/-/web-dash-builder-linux-x64-gnu-0.0.34.tgz#b6ad55ff6f1ec915f6cc228466d3ba94663bc036"
-  integrity sha512-x8Do0jg2PniSxl3V+nzvX8cdjk49QjFfuIrSbkhAXqEFvXHb1tbsSLIjBlEF7/ZimzXcMB7lYRJ64kgtGyNCnw==
+web-dash-builder-linux-x64-gnu@0.0.35:
+  version "0.0.35"
+  resolved "https://registry.yarnpkg.com/web-dash-builder-linux-x64-gnu/-/web-dash-builder-linux-x64-gnu-0.0.35.tgz#ec41819119f18b1024f15276d670e93242bcde7f"
+  integrity sha512-87oexIyGYecIrSVtPmi0kP+1o7V9cDyyovb4Xpv5eyFb6HcLvL9rVbAPxOWqd+cAiNhQQ5kys1cwqIaL7Or+lQ==
 
-web-dash-builder-win32-x64-msvc@0.0.34:
-  version "0.0.34"
-  resolved "https://registry.npmjs.org/web-dash-builder-win32-x64-msvc/-/web-dash-builder-win32-x64-msvc-0.0.34.tgz"
-  integrity sha512-29LotBJ2F2XJxzzuTrdsKBQ0FHf7zFaF6sRofgXogaOlnmsA5pS8eWYyJ9oVjPVUkK4twNjeenyAJ3wQNauBVQ==
+web-dash-builder-win32-x64-msvc@0.0.35:
+  version "0.0.35"
+  resolved "https://registry.yarnpkg.com/web-dash-builder-win32-x64-msvc/-/web-dash-builder-win32-x64-msvc-0.0.35.tgz#36d057c49dc044d06cd561a7f5a4c9b228bb6838"
+  integrity sha512-e7czjntaNuGgmf0i4kmwITIAvYZ98spTSLU9uc716gFvSO5N8DNagORMjDk5KGPiCgY8QSRK6Zu/x4P6D7uyww==
 
-web-dash-builder@0.0.34:
-  version "0.0.34"
-  resolved "https://registry.npmjs.org/web-dash-builder/-/web-dash-builder-0.0.34.tgz"
-  integrity sha512-eNKxg2Q+Zhomz50vlTAO82DRrloEc3ZoUFu/pE0MUPTb1hGb/IpPUrYfireblrXaD7uM7b0jYQPA4zHpMScx2Q==
+web-dash-builder@0.0.35:
+  version "0.0.35"
+  resolved "https://registry.yarnpkg.com/web-dash-builder/-/web-dash-builder-0.0.35.tgz#5c5ddebbaac869b479bc806bc1df2b1972eb8163"
+  integrity sha512-ILv1cgPVG4Z5e7EKLT57YbjwVytoxrmqz/vr1Bph43PJ6OjiAnzQfXSNQMfYJt6ho0BVRRmk4zSEuhHXhLVUbA==
   dependencies:
     react "^18.3.1"
     react-dom "^18.3.1"
   optionalDependencies:
-    web-dash-builder-darwin-x64 "0.0.34"
-    web-dash-builder-linux-x64-gnu "0.0.34"
-    web-dash-builder-win32-x64-msvc "0.0.34"
+    web-dash-builder-darwin-x64 "0.0.35"
+    web-dash-builder-linux-x64-gnu "0.0.35"
+    web-dash-builder-win32-x64-msvc "0.0.35"
 
 which@^2.0.1:
   version "2.0.2"
